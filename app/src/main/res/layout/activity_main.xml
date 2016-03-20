@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorenow.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stadium1"
+            />
+
+        <LinearLayout
+            android:id="@+id/p1Pad"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+            android:text="Insert Player 1 name:"
+            android:textColor="@android:color/white"    />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="16dp"
+                android:textColor="@android:color/white"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/p1Name"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Insert Player 1 team:" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/p1Team"
+                android:layout_marginRight="16dp"
+                android:colorControlNormal="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p2Pad"
+            android:layout_below="@id/p1Pad"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Insert Player 2 name:" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/p2Name"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Insert Player 2 team:" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/p2Team"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/p2Pad"
+            android:text="Save"
+            android:onClick="save"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</ScrollView>
